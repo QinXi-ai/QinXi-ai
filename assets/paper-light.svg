@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="472" viewBox="0 0 900 472" role="img" aria-label="ARXIV:2608.19269: What Does an Evaluation License? A Commit-Bound Census of Claim-Relative Inference in Inspect Evals">
+<title>ARXIV:2608.19269: What Does an Evaluation License? A Commit-Bound Census of Claim-Relative Inference in Inspect Evals</title>
+<style>
+.serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
+.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+.cjk{font-family:'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif}
+.ink{fill:#1B1D1B}.muted{fill:#6E6B62}.accent{fill:#8B2F25}
+.cap{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;letter-spacing:2.2px;fill:#6E6B62}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.fade{opacity:0;animation:fade 1.2s ease forwards}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.6,0,.2,1) forwards}
+.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2s cubic-bezier(.6,0,.2,1) forwards}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rise,.fade,.grow,.draw,.blink{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+</style>
+<rect x="0.5" y="0.5" width="899" height="471" rx="6" fill="#F7F5EF" stroke="#D8D1C1"/>
+<rect x="0" y="0" width="5" height="472" rx="2" fill="#8B2F25"/>
+<g class="fade">
+  <text x="44" y="46" class="mono accent" font-size="12" letter-spacing="1.5">ARXIV:2608.19269  ·  2026 · V3</text>
+  <text x="860" y="46" text-anchor="end" class="cap" font-size="10">READ ON ARXIV ↗</text>
+</g><g class="rise" style="animation-delay:0.1s"><text x="44" y="92" class="serif ink" font-size="28" letter-spacing="-.3">What Does an Evaluation License? A Commit-Bound</text></g><g class="rise" style="animation-delay:0.2s"><text x="44" y="128" class="serif ink" font-size="28" letter-spacing="-.3">Census of Claim-Relative Inference in Inspect Evals</text></g><text x="44" y="170" class="serif muted fade" font-size="15.5" font-style="italic" style="animation-delay:0.4s">Evaluation artifacts produce scores. They do not automatically bind the historical evidence</text><text x="44" y="194" class="serif muted fade" font-size="15.5" font-style="italic" style="animation-delay:0.4s">or alternative semantics needed to replay the claim attached to that score.</text><text x="44" y="230" class="cap" font-size="10">XI QIN · WUHAN UNIVERSITY</text><line x1="44" y1="256" x2="860" y2="256" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.5s">
+  <text x="44" y="312" class="serif accent" font-size="40" font-style="italic">D</text>
+  <text x="86" y="294" class="serif ink" font-size="17">Frozen substrate</text>
+  <text x="86" y="314" class="mono muted" font-size="10.5">Versioned inputs, traces, state.</text>
+</g><text x="294" y="306" class="mono muted" font-size="14">→</text><g class="rise" style="animation-delay:0.62s">
+  <text x="316" y="312" class="serif accent" font-size="40" font-style="italic">F</text>
+  <text x="358" y="294" class="serif ink" font-size="17">Grounded family</text>
+  <text x="358" y="314" class="mono muted" font-size="10.5">Admissible readings + review.</text>
+</g><text x="566" y="306" class="mono muted" font-size="14">→</text><g class="rise" style="animation-delay:0.74s">
+  <text x="588" y="312" class="serif accent" font-size="40" font-style="italic">q</text>
+  <text x="630" y="294" class="serif ink" font-size="17">Claim query</text>
+  <text x="630" y="314" class="mono muted" font-size="10.5">Score, winner, order, relation.</text>
+</g><line x1="44" y1="340" x2="860" y2="340" stroke="#D8D1C1"/>
+<g class="fade" style="animation-delay:0.7s">
+  <text x="44" y="384" class="serif ink" font-size="30">124</text>
+  <text x="106" y="383" class="cap" font-size="9.5">MECHANICALLY ELIGIBLE UNITS</text>
+  <text x="424" y="384" class="serif accent" font-size="30">14</text>
+  <text x="462" y="383" class="cap" font-size="9.5">ANALYSES</text>
+  <text x="604" y="384" class="serif ink" font-size="30">110</text>
+  <text x="660" y="383" class="cap" font-size="9.5">TYPED STOPS</text>
+</g>
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#6E6B62" stroke-opacity=".45" stroke-width="2"/></pattern></defs>
+<rect x="44" y="414" width="816" height="14" rx="2" fill="#E9E4D8" stroke="#D8D1C1"/>
+<rect x="136.1290322580645" y="414" width="723.8709677419355" height="14" fill="url(#hatch)" class="grow" style="animation-delay:1.1s"/>
+<rect x="44" y="414" width="92.12903225806451" height="14" rx="2" fill="#8B2F25" class="grow" style="animation-delay:0.8s"/>
+<text x="44" y="450" class="mono muted" font-size="10.5">Every unit gets a terminal record. A STOP is not a zero score — it names the first missing object.</text>
+</svg>

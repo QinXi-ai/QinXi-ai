@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="434" viewBox="0 0 900 434" role="img" aria-label="Awards: CCF Open Source Innovation Competition first and third prizes, CCF Quantum Computing Challenge first prize, National Electrical Math Modeling second prize (2026)">
+<title>Awards: CCF Open Source Innovation Competition first and third prizes, CCF Quantum Computing Challenge first prize, National Electrical Math Modeling second prize (2026)</title>
+<style>
+.serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
+.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+.cjk{font-family:'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif}
+.ink{fill:#1B1D1B}.muted{fill:#6E6B62}.accent{fill:#8B2F25}
+.cap{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;letter-spacing:2.2px;fill:#6E6B62}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.fade{opacity:0;animation:fade 1.2s ease forwards}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.6,0,.2,1) forwards}
+.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2s cubic-bezier(.6,0,.2,1) forwards}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rise,.fade,.grow,.draw,.blink{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+</style>
+<rect width="900" height="434" rx="8" fill="#F3F0E8"/><g class="rise" style="animation-delay:0.1s">
+  <circle cx="72" cy="64" r="26" fill="#8B2F2514" stroke="#8B2F25" stroke-width="1.5"/>
+  <text x="72" y="71" text-anchor="middle" class="serif accent" font-size="20" font-style="italic">I</text>
+  <text x="124" y="60" class="serif accent" font-size="21" font-style="italic">First Prize</text>
+  <text x="124" y="84" class="cjk muted" font-size="13">一等奖</text>
+  <text x="290" y="58" class="serif ink" font-size="18.5">CCF Open Source Innovation Competition</text>
+  <text x="290" y="82" class="mono muted" font-size="11">openvela Smart Band Track<tspan class="cjk" font-size="12.5">  ·  CCF 开源创新大赛 · 智能手环赛道</tspan></text>
+  <text x="860" y="58" text-anchor="end" class="mono muted" font-size="11" letter-spacing="1.5">2026</text>
+</g><line x1="40" y1="111.5" x2="860" y2="111.5" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.22s">
+  <circle cx="72" cy="156" r="26" fill="#8B2F2514" stroke="#8B2F25" stroke-width="1.5"/>
+  <text x="72" y="163" text-anchor="middle" class="serif accent" font-size="20" font-style="italic">I</text>
+  <text x="124" y="152" class="serif accent" font-size="21" font-style="italic">First Prize</text>
+  <text x="124" y="176" class="cjk muted" font-size="13">一等奖</text>
+  <text x="290" y="150" class="serif ink" font-size="18.5">CCF Quantum Computing Programming Challenge</text>
+  <text x="290" y="174" class="mono muted" font-size="11">Origin Quantum Cup<tspan class="cjk" font-size="12.5">  ·  CCF 量子计算编程挑战赛 · 本源杯</tspan></text>
+  <text x="860" y="150" text-anchor="end" class="mono muted" font-size="11" letter-spacing="1.5">2026</text>
+</g><line x1="40" y1="203.5" x2="860" y2="203.5" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.33999999999999997s">
+  <circle cx="72" cy="248" r="26" fill="none" stroke="#D8D1C1" stroke-width="1.5"/>
+  <text x="72" y="255" text-anchor="middle" class="serif ink" font-size="20" font-style="italic">II</text>
+  <text x="124" y="244" class="serif ink" font-size="21" font-style="italic">Second Prize</text>
+  <text x="124" y="268" class="cjk muted" font-size="13">二等奖</text>
+  <text x="290" y="242" class="serif ink" font-size="18.5">National Electrical Mathematical Modeling</text>
+  <text x="290" y="266" class="mono muted" font-size="11">CSEE Cup · “Diangong Cup”<tspan class="cjk" font-size="12.5">  ·  全国大学生电工数学建模竞赛 · 电工杯</tspan></text>
+  <text x="860" y="242" text-anchor="end" class="mono muted" font-size="11" letter-spacing="1.5">2026</text>
+</g><line x1="40" y1="295.5" x2="860" y2="295.5" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.45999999999999996s">
+  <circle cx="72" cy="340" r="26" fill="none" stroke="#D8D1C1" stroke-width="1.5"/>
+  <text x="72" y="347" text-anchor="middle" class="serif ink" font-size="20" font-style="italic">III</text>
+  <text x="124" y="336" class="serif ink" font-size="21" font-style="italic">Third Prize</text>
+  <text x="124" y="360" class="cjk muted" font-size="13">三等奖</text>
+  <text x="290" y="334" class="serif ink" font-size="18.5">CCF Open Source Innovation Competition</text>
+  <text x="290" y="358" class="mono muted" font-size="11">openvela Smart Home Track<tspan class="cjk" font-size="12.5">  ·  CCF 开源创新大赛 · 智能家居赛道</tspan></text>
+  <text x="860" y="334" text-anchor="end" class="mono muted" font-size="11" letter-spacing="1.5">2026</text>
+</g><line x1="40" y1="387.5" x2="860" y2="387.5" stroke="#D8D1C1"/><text x="40" y="418" class="mono muted" font-size="10">CCF Open Source Innovation Competition 2026 · 586 valid entries · 34 first prizes across all tracks</text>
+</svg>

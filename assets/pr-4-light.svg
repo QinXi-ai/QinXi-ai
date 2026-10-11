@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="216" viewBox="0 0 440 216" role="img" aria-label="lacs-project/sysknife#514 — Keep credentials out of language-model planning (merged 2026-10-01)">
+<title>lacs-project/sysknife#514 — Keep credentials out of language-model planning (merged 2026-10-01)</title>
+<style>
+.serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
+.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+.cjk{font-family:'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif}
+.ink{fill:#1B1D1B}.muted{fill:#6E6B62}.accent{fill:#8B2F25}
+.cap{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;letter-spacing:2.2px;fill:#6E6B62}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.fade{opacity:0;animation:fade 1.2s ease forwards}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.6,0,.2,1) forwards}
+.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2s cubic-bezier(.6,0,.2,1) forwards}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rise,.fade,.grow,.draw,.blink{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+</style>
+<rect x="0.5" y="0.5" width="439" height="215" rx="6" fill="#F7F5EF" stroke="#D8D1C1"/>
+<g class="fade">
+  <text x="26" y="36" class="mono accent" font-size="11" letter-spacing="1.5">04</text>
+  <text x="52" y="36" class="cap" font-size="9.5">AGENT SECURITY</text>
+  <rect x="344" y="21" width="70" height="21" rx="10.5" fill="#8B2F2514" stroke="#8B2F25" stroke-opacity=".6"/>
+  <circle cx="357" cy="31.5" r="3" fill="#8B2F25"/>
+  <text x="386" y="35.5" text-anchor="middle" class="mono accent" font-size="9.5" letter-spacing="1.2">MERGED</text>
+</g>
+<text x="26" y="70" class="mono ink" font-size="12.5">lacs-project / <tspan font-weight="700">sysknife</tspan><tspan class="muted"> #514</tspan></text><g class="rise" style="animation-delay:0.1s"><text x="26" y="106" class="serif ink" font-size="22" letter-spacing="-.2">Keep credentials out of</text></g><g class="rise" style="animation-delay:0.18s"><text x="26" y="134" class="serif ink" font-size="22" letter-spacing="-.2">language-model planning</text></g>
+<text x="26" y="160" class="mono muted" font-size="10">1,883 Linux CI tests · parser regressions</text>
+<line x1="26" y1="178" x2="414" y2="178" stroke="#D8D1C1"/>
+<text x="26" y="200" class="mono ink" font-size="11">+305<tspan class="accent"> −32</tspan><tspan class="muted"> · 11 files</tspan></text>
+<rect x="176" y="192" width="8" height="8" rx="1.5" fill="#1B1D1B"/><rect x="186" y="192" width="8" height="8" rx="1.5" fill="#1B1D1B"/><rect x="196" y="192" width="8" height="8" rx="1.5" fill="#1B1D1B"/><rect x="206" y="192" width="8" height="8" rx="1.5" fill="#1B1D1B"/><rect x="216" y="192" width="8" height="8" rx="1.5" fill="#8B2F25"/>
+<text x="414" y="200" text-anchor="end" class="mono muted" font-size="10">2026-10-01</text>
+</svg>

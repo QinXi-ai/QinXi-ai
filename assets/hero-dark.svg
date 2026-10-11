@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" role="img" aria-label="Xi Qin — Research should survive contact with evidence.">
+<title>Xi Qin — Research should survive contact with evidence.</title>
+<style>
+.serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
+.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
+.cjk{font-family:'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif}
+.ink{fill:#ECE7DA}.muted{fill:#9D998C}.accent{fill:#D97C69}
+.cap{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;font-size:11px;letter-spacing:2.2px;fill:#9D998C}
+.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.fade{opacity:0;animation:fade 1.2s ease forwards}
+.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.6,0,.2,1) forwards}
+.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2s cubic-bezier(.6,0,.2,1) forwards}
+.blink{animation:blink 1.1s steps(1) infinite}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes fade{to{opacity:1}}
+@keyframes grow{to{transform:scaleX(1)}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes blink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.rise,.fade,.grow,.draw,.blink{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+</style>
+
+<rect width="900" height="380" rx="8" fill="#151613"/>
+<line x1="0" y1="96" x2="900" y2="96" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="128" x2="900" y2="128" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="160" x2="900" y2="160" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="192" x2="900" y2="192" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="224" x2="900" y2="224" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="256" x2="900" y2="256" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="288" x2="900" y2="288" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="320" x2="900" y2="320" stroke="#1D1E1A" stroke-width="1"/><line x1="0" y1="352" x2="900" y2="352" stroke="#1D1E1A" stroke-width="1"/>
+<line x1="64" y1="64" x2="64" y2="380" stroke="#D97C69" stroke-opacity=".22"/>
+<g class="fade" style="animation-delay:0s">
+  <text x="40" y="42" class="serif ink" font-size="22" font-style="italic">XQ</text>
+  <text x="860" y="40" text-anchor="end" class="cap">RESEARCH · OPEN SOURCE · WUHAN UNIVERSITY</text>
+  <line x1="40" y1="62" x2="860" y2="62" stroke="#36362F"/>
+</g>
+<g class="rise" style="animation-delay:0.15s"><text x="88" y="114" class="cap">XI QIN  /  RESEARCH ENGINEER<tspan class="blink" fill="#D97C69"> ▍</tspan></text></g>
+<g class="rise" style="animation-delay:0.3s"><text x="86" y="186" class="serif ink" font-size="60" letter-spacing="-1.2">Research should survive</text></g>
+<g class="rise" style="animation-delay:0.5s"><text x="86" y="254" class="serif ink" font-size="60" letter-spacing="-1.2">contact with <tspan class="accent" font-style="italic">evidence.</tspan></text></g>
+<line x1="88" y1="282" x2="168" y2="282" stroke="#D97C69" stroke-width="2" class="draw" style="animation-delay:0.9s"/>
+<g class="rise" style="animation-delay:0.8s">
+  <text x="88" y="318" class="serif ink" font-size="18">I build research systems that turn ambitious AI</text>
+  <text x="88" y="344" class="serif ink" font-size="18">claims into reproducible, inspectable evidence.</text>
+</g>
+<g class="rise" style="animation-delay:1s">
+  <line x1="630" y1="300" x2="630" y2="352" stroke="#D97C69" stroke-width="1.5"/>
+  <text x="648" y="322" class="serif ink" font-size="21" font-style="italic">Nullius in verba.</text>
+  <text x="648" y="346" class="cap" font-size="10">TAKE NOBODY'S WORD FOR IT.</text>
+</g>
+</svg>
