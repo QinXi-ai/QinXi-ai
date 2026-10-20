@@ -10,19 +10,19 @@ mkdirSync(OUT, { recursive: true });
 // ---------------------------------------------------------------- content
 
 const STATS = {
-  asOf: "OCT 2026",
+  asOf: "20 OCT 2026",
   items: [
-    ["1", "arXiv paper", "v3 · 2026"],
-    ["58", "upstream PRs merged", "query engines → agents"],
-    ["27", "external repositories", "Rust · Python · TS · C"],
-    ["4", "national awards", "incl. 2 first prizes"],
+    ["2", "research preprints", "learning theory · AI eval"],
+    ["67", "public PRs merged", "query engines → agents"],
+    ["27", "repositories", "outside personal namespace"],
+    ["4", "competition awards", "incl. 2 first prizes"],
   ],
 };
 
 const STACK = ["Rust", "Python", "TypeScript", "C", "MoonBit", "openvela · LVGL", "LLM evaluation"];
 
 const SECTIONS = {
-  research: ["01", "FEATURED RESEARCH", "Claim-relative inference", "Ad fontes", "BACK TO THE SOURCES"],
+  research: ["01", "SELECTED RESEARCH", "Questions, made precise.", "Ad fontes", "BACK TO THE SOURCES"],
   contrib: ["02", "OPEN-SOURCE CONTRIBUTIONS", "Changes that landed", "Res ipsa loquitur", "THE WORK SPEAKS FOR ITSELF"],
   work: ["03", "SELECTED WORK", "Research tools & systems", "Festina lente", "MAKE HASTE SLOWLY"],
   awards: ["04", "SELECTED RECOGNITION", "Competitions & awards", "Per aspera", "THROUGH THE HARD PARTS"],
@@ -46,15 +46,18 @@ const PAPER = {
 };
 
 const PRS = [
+  { cat: "QUERY ENGINES", owner: "apache", repo: "datafusion", n: 25765, title: "Serialize lazy generators through hooks", proof: "Wire compatibility · round-trip execution", add: 804, del: 240, files: 11, date: "2026-10-19" },
+  { cat: "DEVELOPER TOOLS", owner: "microsoft", repo: "vscode-eslint", n: 2227, title: "Keep linting inside the workspace", proof: "Opt-in boundary · virtual-file support", add: 229, del: 73, files: 8, date: "2026-10-16" },
+  { cat: "AGENT SECURITY", owner: "lacs-project", repo: "sysknife", n: 573, title: "Redact credentials from tool context", proof: "Provider-context regression coverage", add: 617, del: 7, files: 10, date: "2026-10-12" },
   { cat: "QUERY ENGINES", owner: "apache", repo: "datafusion", n: 25150, title: "Skip hashing for fully ordered group keys", proof: "Differential tests · cross-batch coverage", add: 779, del: 2, files: 7, date: "2026-10-01" },
   { cat: "SCIENTIFIC PYTHON", owner: "pydata", repo: "xarray", n: 11552, title: "Bring apply_ufunc to DataTree", proof: "323 targeted tests · tree regressions", add: 151, del: 6, files: 4, date: "2026-09-09" },
   { cat: "NUMERICAL METHODS", owner: "awslabs", repo: "stickler", n: 284, title: "Replace sklearn metrics with NumPy", proof: "130 oracle tests · 1,947 portable tests", add: 269, del: 66, files: 10, date: "2026-08-28" },
-  { cat: "AGENT SECURITY", owner: "lacs-project", repo: "sysknife", n: 514, title: "Keep credentials out of language-model planning", proof: "1,883 Linux CI tests · parser regressions", add: 305, del: 32, files: 11, date: "2026-10-01" },
   { cat: "DATA SYSTEMS", owner: "AndreaBozzo", repo: "dataprof", n: 655, title: "Read and profile only selected columns", proof: "Rust + 353 Python tests · byte ranges", add: 934, del: 133, files: 24, date: "2026-09-01" },
   { cat: "GEOMETRY", owner: "3b1b", repo: "manim", n: 2501, title: "Fix batched 2D vector rotation", proof: "2D/3D regressions · VectorField repro", add: 53, del: 2, files: 2, date: "2026-08-17" },
 ];
 
 const WORK = [
+  { name: "Pocket MOSS Image", lang: "PYTHON / PYTORCH", desc: "Low-memory MOSS-Image inference: the original 9B text encoder with packed INT6 weights and a streamed, fused INT8 DiT. No retraining or replacement encoder.", url: "https://github.com/QinXi-ai/pocket-moss-image" },
   { name: "evalspec-audit", lang: "PYTHON", desc: "Reproducible audits of how evaluation choices affect scores, rankings, and the claims a benchmark supports.", url: "https://github.com/QinXi-ai/evalspec-audit" },
   { name: "FastRead", lang: "PYTHON / TS", desc: "A paper-reading workspace with page-linked evidence, reports, notes, and conversations grounded in the original PDF.", url: "https://github.com/FastR-D/FastRead" },
   { name: "MoonCat · 月薪喵", lang: "C / OPENVELA", desc: "An openvela wearable recovery coach: LVGL interface, scheduled reminders, and on-device INT8 intent routing.", url: "https://github.com/open-vela/contest2026_477_smartband" },
@@ -109,17 +112,7 @@ function svg(w, h, t, body, title) {
 .cjk{font-family:${CJK}}
 .ink{fill:${t.ink}}.muted{fill:${t.muted}}.accent{fill:${t.accent}}
 .cap{font-family:${MONO};font-size:11px;letter-spacing:2.2px;fill:${t.muted}}
-.rise{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
-.fade{opacity:0;animation:fade 1.2s ease forwards}
-.grow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:grow 1.4s cubic-bezier(.6,0,.2,1) forwards}
-.draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 2s cubic-bezier(.6,0,.2,1) forwards}
-.blink{animation:blink 1.1s steps(1) infinite}
-@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes fade{to{opacity:1}}
-@keyframes grow{to{transform:scaleX(1)}}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes blink{50%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.rise,.fade,.grow,.draw,.blink{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+.rise,.fade,.grow,.draw,.blink{opacity:1;transform:none;stroke-dashoffset:0}
 </style>
 ${body}
 </svg>
@@ -137,30 +130,36 @@ const ruled = (w, h, t, step = 32, from = 0) => {
 // ---------------------------------------------------------------- pieces
 
 function hero(t) {
-  const W = 900, H = 380;
-  const lead = ["I build research systems that turn ambitious AI", "claims into reproducible, inspectable evidence."];
+  const W = 900, H = 400;
   return svg(W, H, t, `
 <rect width="${W}" height="${H}" rx="8" fill="${t.bg}"/>
-${ruled(W, H, t, 32, 96)}
-<line x1="64" y1="64" x2="64" y2="${H}" stroke="${t.accent}" stroke-opacity=".22"/>
 <g class="fade" ${d(0)}>
   <text x="40" y="42" class="serif ink" font-size="22" font-style="italic">XQ</text>
-  <text x="${W - 40}" y="40" text-anchor="end" class="cap">RESEARCH · OPEN SOURCE · WUHAN UNIVERSITY</text>
+  <text x="85" y="40" class="mono ink" font-size="12">XI QIN</text>
+  <text x="${W - 40}" y="40" text-anchor="end" class="cap">RESEARCH · OPEN SOURCE · 2026</text>
   <line x1="40" y1="62" x2="${W - 40}" y2="62" stroke="${t.rule}"/>
 </g>
-<g class="rise" ${d(0.15)}><text x="88" y="114" class="cap">XI QIN  /  RESEARCH ENGINEER<tspan class="blink" fill="${t.accent}"> ▍</tspan></text></g>
-<g class="rise" ${d(0.3)}><text x="86" y="186" class="serif ink" font-size="60" letter-spacing="-1.2">Research should survive</text></g>
-<g class="rise" ${d(0.5)}><text x="86" y="254" class="serif ink" font-size="60" letter-spacing="-1.2">contact with <tspan class="accent" font-style="italic">evidence.</tspan></text></g>
-<line x1="88" y1="282" x2="168" y2="282" stroke="${t.accent}" stroke-width="2" class="draw" ${d(0.9)}/>
-<g class="rise" ${d(0.8)}>
-  <text x="88" y="318" class="serif ink" font-size="18">${esc(lead[0])}</text>
-  <text x="88" y="344" class="serif ink" font-size="18">${esc(lead[1])}</text>
+<text x="40" y="104" class="cap">WUHAN UNIVERSITY</text>
+<g class="rise" ${d(.1)}><text x="38" y="171" class="serif ink" font-size="58" letter-spacing="-1.5">From first <tspan class="accent" font-style="italic">principles</tspan></text></g>
+<g class="rise" ${d(.25)}><text x="38" y="235" class="serif ink" font-size="58" letter-spacing="-1.5">to working code.</text></g>
+<g class="fade" ${d(.4)}>
+  <text x="40" y="286" class="serif muted" font-size="18">Learning theory. Reproducible AI evaluation.</text>
+  <text x="40" y="312" class="serif muted" font-size="18">Open-source systems that put ideas to work.</text>
 </g>
-<g class="rise" ${d(1.0)}>
-  <line x1="630" y1="300" x2="630" y2="352" stroke="${t.accent}" stroke-width="1.5"/>
-  <text x="648" y="322" class="serif ink" font-size="21" font-style="italic">Nullius in verba.</text>
-  <text x="648" y="346" class="cap" font-size="10">TAKE NOBODY'S WORD FOR IT.</text>
-</g>`, "Xi Qin — Research should survive contact with evidence.");
+<g transform="translate(590 75)" fill="none" stroke="${t.ink}" stroke-width="1">
+  <circle cx="130" cy="130" r="112" opacity=".2"/>
+  <circle cx="130" cy="130" r="76" opacity=".1"/>
+  <path d="M0 130H260M130 0V260" opacity=".15"/>
+  <path d="M130 18 23 188 237 188Z M130 18 130 243 23 188 M130 243 237 188" class="draw" opacity=".7" ${d(.3)}/>
+  <path d="M130 18V243 M23 188 130 130 237 188" stroke-dasharray="4 5" opacity=".35"/>
+  <path d="M130 18 23 188 237 188Z" fill="${t.accent}" fill-opacity=".06" stroke="none"/>
+  ${[[130,18],[23,188],[237,188],[130,243]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${t.bg}" stroke="${t.accent}" stroke-width="1.5"/>`).join("")}
+  <circle cx="130" cy="130" r="4" fill="${t.accent}" stroke="none"/>
+</g>
+<line x1="40" y1="344" x2="860" y2="344" stroke="${t.rule}"/>
+<text x="40" y="375" class="serif accent" font-size="18" font-style="italic">Nullius in verba.</text>
+<text x="860" y="374" text-anchor="end" class="cap">IDEAS WORTH PROVING. SYSTEMS WORTH BUILDING.</text>
+`, "Xi Qin — From first principles to working code.");
 }
 
 function stats(t) {
@@ -178,7 +177,7 @@ function stats(t) {
 </g>`;
   });
   body += `<text x="${W - 40}" y="22" text-anchor="end" class="cap" font-size="9">AS OF ${STATS.asOf}</text>`;
-  return svg(W, H, t, body, "1 arXiv paper · 58 upstream PRs merged · 27 external repositories · 4 national awards");
+  return svg(W, H, t, body, STATS.items.map(([n, label]) => `${n} ${label}`).join(" · "));
 }
 
 function stack(t) {
@@ -362,7 +361,7 @@ for (const [name, t] of Object.entries(THEMES)) {
 
 // ---------------------------------------------------------------- README
 
-const MERGED = "https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic&type=pullrequests";
+const MERGED = "https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests";
 const pic = (name, alt, w = "100%") =>
   `<picture><source media="(prefers-color-scheme: dark)" srcset="assets/${name}-dark.svg"><img src="assets/${name}-light.svg" alt="${esc(alt)}" width="${w}"></picture>`;
 const link = (href, inner) => `<a href="${href}">${inner}</a>`;
@@ -371,45 +370,68 @@ const pairs = (cards) => cards.reduce((rows, c, i) => (i % 2 ? (rows[rows.length
 
 const README = `<!-- Artwork is generated: edit scripts/build.mjs, then run \`node scripts/build.mjs\`. -->
 
-${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin — Research should survive contact with evidence. I build research systems that turn ambitious AI claims into reproducible, inspectable evidence."))}
+${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin at Wuhan University — From first principles to working code. Learning theory, reproducible AI evaluation, and open-source engineering."))}
 
 <p align="center">
-  <a href="https://qinxi-ai.github.io/"><b>Research archive</b></a> &nbsp;·&nbsp;
-  <a href="https://arxiv.org/abs/${PAPER.id.split(":")[1]}">arXiv paper</a> &nbsp;·&nbsp;
+  <a href="https://qinxi-ai.github.io/"><b>Personal website</b></a> &nbsp;·&nbsp;
+  <a href="https://zenodo.org/records/23119254">Latest paper</a> &nbsp;·&nbsp;
   <a href="${MERGED}">Merged pull requests</a> &nbsp;·&nbsp;
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
 ${link(MERGED, pic("stats", STATS.items.map(([n, l]) => `${n} ${l}`).join(", ")))}
-${pic("stack", "Works in " + STACK.join(", "))}
+<p align="center"><sub>Public merged PRs outside my personal namespace · Verified 20 October 2026</sub></p>
 
-<br>
+## 01 / Selected research
 
-${pic("section-research", "01 Featured research — Claim-relative inference")}
+### [Exact Three-Example Selection in Every Dimension](https://zenodo.org/records/23119254)
 
-${link(`https://arxiv.org/abs/${PAPER.id.split(":")[1]}`, pic("paper", `${PAPER.id} — ${PAPER.title}. ${PAPER.units} eligible units, ${PAPER.done} deterministic analyses, ${PAPER.stops} typed stops.`))}
+**Latest preprint · Learning theory · 3 October 2026**
 
-<br>
+How much can you lose by keeping just three examples? I determine the exact worst-case risk inflation for mean regression when selecting three support points, with repetition allowed, and predicting their equally weighted mean—in every dimension.
 
-${pic("section-contrib", "02 Open-source contributions — Changes that landed")}
+The result resolves the **n = 3 column** of the data-selection question posed at COLT 2025, with sharp constants and a characterization of the extremal geometry.
 
-${pairs(PRS.map((p, i) => link(`https://github.com/${p.owner}/${p.repo}/pull/${p.n}`, pic(`pr-${i + 1}`, `${p.owner}/${p.repo}#${p.n}: ${p.title}`, "49%"))))}
+[Read the paper ↗](https://zenodo.org/records/23119254/files/exact-three-example-selection.pdf) · [Source & verification scripts ↓](https://zenodo.org/records/23119254/files/exact-three-example-selection-source-v1.0.zip) · [DOI: 10.5281/zenodo.23119254](https://doi.org/10.5281/zenodo.23119254)
 
-<p align="right"><a href="${MERGED}"><code>All ${STATS.items[1][0]} merged pull requests →</code></a></p>
+### [What Does an Evaluation License?](https://arxiv.org/abs/2608.19269)
 
-${pic("section-work", "03 Selected work — Research tools and systems")}
+**Preprint · AI evaluation · arXiv:2608.19269 · v3**
 
-${pairs(WORK.map((w, i) => link(w.url, pic(`work-${i + 1}`, `${w.name}: ${w.desc}`, "49%"))))}
+*A Commit-Bound Census of Claim-Relative Inference in Inspect Evals.*
+A framework for connecting evaluation artifacts to the claims they support. The census records **124 eligible units**, **14 deterministic analyses**, and **110 typed stops** that identify missing evidence.
 
-<br>
+[Read on arXiv ↗](https://arxiv.org/abs/2608.19269) · [Code ↗](https://github.com/QinXi-ai/evalspec-audit)
 
-${pic("section-awards", "04 Selected recognition — Competitions and awards")}
+## 02 / Open-source contributions
 
-${link("https://qinxi-ai.github.io/#recognition", pic("awards", "2026 — " + AWARDS.map((a) => `${a.comp}, ${a.track}: ${a.prize}`).join("; ")))}
+**14 PRs merged since 2 October.** Selected work across query engines, developer tools, scientific computing, and agent security.
 
-<br>
+| Project | Contribution | Merged |
+| :--- | :--- | :--- |
+${PRS.map(p => `| **${p.owner}/${p.repo}** | [${p.title} · #${p.n}](https://github.com/${p.owner}/${p.repo}/pull/${p.n}) | ${p.date} |`).join("\n")}
 
-${link("mailto:3624951962qx@gmail.com", pic("principles", "Bound by the record: " + PRINCIPLES.map(([la]) => la).join(" ") + " Festina lente. Let's compare notes."))}
+Also just merged: [SysKnife #612 — detect credentials after escaped boundaries](https://github.com/lacs-project/sysknife/pull/612) · 19 October.
+
+[Browse all ${STATS.items[1][0]} public merged PRs →](${MERGED})
+
+## 03 / Selected projects
+
+${WORK.map(w => `**[${w.name}](${w.url})** · \`${w.lang}\`<br>\n${w.desc}`).join("\n\n")}
+
+## 04 / Recognition
+
+| 2026 competition / 竞赛 | Award / 奖项 |
+| :--- | :--- |
+${AWARDS.map(a => `| ${a.comp} · ${a.track}<br>${a.trackCn} | **${a.prize}**<br>${a.cn} |`).join("\n")}
+
+[Competition background & details / 赛事介绍 →](https://qinxi-ai.github.io/#recognition)
+
+---
+
+**Works in** Rust · Python · TypeScript · C · MoonBit · openvela / LVGL
+
+*Nihil ultra testimonium.* — Nothing beyond the evidence.
 
 <p align="center"><sub><i>Nullius in verba.</i> &nbsp;·&nbsp; <a href="https://qinxi-ai.github.io/">qinxi-ai.github.io</a></sub></p>
 `;
