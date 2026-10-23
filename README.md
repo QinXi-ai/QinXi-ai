@@ -1,22 +1,32 @@
 <!-- Artwork is generated: edit scripts/build.mjs, then run `node scripts/build.mjs`. -->
 
-<a href="https://qinxi-ai.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img src="assets/hero-light.svg" alt="Xi Qin at Wuhan University — From first principles to working code. Learning theory, reproducible AI evaluation, and open-source engineering." width="100%"></picture></a>
+<a href="https://qinxi-ai.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><img src="assets/hero-light.svg" alt="Xi Qin at Wuhan University — From first principles to working code. Learning theory, reproducible AI evaluation, and open-source engineering. Omnes montes tandem flectentur." width="100%"></picture></a>
 
 <p align="center">
   <a href="https://qinxi-ai.github.io/"><b>Personal website</b></a> &nbsp;·&nbsp;
-  <a href="https://zenodo.org/records/23119254">Latest paper</a> &nbsp;·&nbsp;
+  <a href="https://zenodo.org/records/23584756">Latest paper</a> &nbsp;·&nbsp;
   <a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests">Merged pull requests</a> &nbsp;·&nbsp;
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
-<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="2 research preprints, 67 public PRs merged, 27 repositories, 4 competition awards" width="100%"></picture></a>
-<p align="center"><sub>Public merged PRs outside my personal namespace · Verified 20 October 2026</sub></p>
+<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="3 research preprints, 67 public PRs merged, 27 repositories, 4 competition awards" width="100%"></picture></a>
+<p align="center"><sub>Research updated 23 October 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
 
 ## 01 / Selected research
 
+### [Instance-Optimal Identity Testing at the Original Total-Variation Radius: Resolving Canonne's 2024 Open Question 1](https://zenodo.org/records/23584756)
+
+**Latest preprint · Distribution testing · 23 October 2026**
+
+How many samples are needed to test whether an unknown distribution equals a specified reference—at the total-variation radius actually given? I give an explicit characterization, up to universal constants, for every finite or countable reference distribution at the original radius.
+
+The preprint resolves **Canonne's COLT 2024 Open Question 1** in the countable-alphabet model, with matching upper and lower bounds and a polynomial-time factor-two approximation for explicit rational input.
+
+[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
+
 ### [Exact Three-Example Selection in Every Dimension](https://zenodo.org/records/23119254)
 
-**Latest preprint · Learning theory · 3 October 2026**
+**Preprint · Learning theory · 3 October 2026**
 
 How much can you lose by keeping just three examples? I determine the exact worst-case risk inflation for mean regression when selecting three support points, with repetition allowed, and predicting their equally weighted mean—in every dimension.
 

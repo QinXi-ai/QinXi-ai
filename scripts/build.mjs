@@ -10,9 +10,9 @@ mkdirSync(OUT, { recursive: true });
 // ---------------------------------------------------------------- content
 
 const STATS = {
-  asOf: "20 OCT 2026",
+  asOf: "RESEARCH 23 OCT · OPEN SOURCE 20 OCT 2026",
   items: [
-    ["2", "research preprints", "learning theory · AI eval"],
+    ["3", "research preprints", "learning · testing · eval"],
     ["67", "public PRs merged", "query engines → agents"],
     ["27", "repositories", "outside personal namespace"],
     ["4", "competition awards", "incl. 2 first prizes"],
@@ -157,9 +157,9 @@ function hero(t) {
   <circle cx="130" cy="130" r="4" fill="${t.accent}" stroke="none"/>
 </g>
 <line x1="40" y1="344" x2="860" y2="344" stroke="${t.rule}"/>
-<text x="40" y="375" class="serif accent" font-size="18" font-style="italic">Nullius in verba.</text>
+<text x="40" y="375" class="serif accent" font-size="18" font-style="italic">Omnes montes tandem flectentur.</text>
 <text x="860" y="374" text-anchor="end" class="cap">IDEAS WORTH PROVING. SYSTEMS WORTH BUILDING.</text>
-`, "Xi Qin — From first principles to working code.");
+`, "Xi Qin — From first principles to working code. Omnes montes tandem flectentur.");
 }
 
 function stats(t) {
@@ -176,7 +176,7 @@ function stats(t) {
   <text x="${x + (i ? 24 : 0)}" y="112" class="mono muted" font-size="10.5">${esc(sub)}</text>
 </g>`;
   });
-  body += `<text x="${W - 40}" y="22" text-anchor="end" class="cap" font-size="9">AS OF ${STATS.asOf}</text>`;
+  body += `<text x="${W - 40}" y="22" text-anchor="end" class="cap" font-size="9">${STATS.asOf}</text>`;
   return svg(W, H, t, body, STATS.items.map(([n, label]) => `${n} ${label}`).join(" · "));
 }
 
@@ -370,23 +370,33 @@ const pairs = (cards) => cards.reduce((rows, c, i) => (i % 2 ? (rows[rows.length
 
 const README = `<!-- Artwork is generated: edit scripts/build.mjs, then run \`node scripts/build.mjs\`. -->
 
-${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin at Wuhan University — From first principles to working code. Learning theory, reproducible AI evaluation, and open-source engineering."))}
+${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin at Wuhan University — From first principles to working code. Learning theory, reproducible AI evaluation, and open-source engineering. Omnes montes tandem flectentur."))}
 
 <p align="center">
   <a href="https://qinxi-ai.github.io/"><b>Personal website</b></a> &nbsp;·&nbsp;
-  <a href="https://zenodo.org/records/23119254">Latest paper</a> &nbsp;·&nbsp;
+  <a href="https://zenodo.org/records/23584756">Latest paper</a> &nbsp;·&nbsp;
   <a href="${MERGED}">Merged pull requests</a> &nbsp;·&nbsp;
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
 ${link(MERGED, pic("stats", STATS.items.map(([n, l]) => `${n} ${l}`).join(", ")))}
-<p align="center"><sub>Public merged PRs outside my personal namespace · Verified 20 October 2026</sub></p>
+<p align="center"><sub>Research updated 23 October 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
 
 ## 01 / Selected research
 
+### [Instance-Optimal Identity Testing at the Original Total-Variation Radius: Resolving Canonne's 2024 Open Question 1](https://zenodo.org/records/23584756)
+
+**Latest preprint · Distribution testing · 23 October 2026**
+
+How many samples are needed to test whether an unknown distribution equals a specified reference—at the total-variation radius actually given? I give an explicit characterization, up to universal constants, for every finite or countable reference distribution at the original radius.
+
+The preprint resolves **Canonne's COLT 2024 Open Question 1** in the countable-alphabet model, with matching upper and lower bounds and a polynomial-time factor-two approximation for explicit rational input.
+
+[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
+
 ### [Exact Three-Example Selection in Every Dimension](https://zenodo.org/records/23119254)
 
-**Latest preprint · Learning theory · 3 October 2026**
+**Preprint · Learning theory · 3 October 2026**
 
 How much can you lose by keeping just three examples? I determine the exact worst-case risk inflation for mean regression when selecting three support points, with repetition allowed, and predicting their equally weighted mean—in every dimension.
 
@@ -437,3 +447,4 @@ ${AWARDS.map(a => `| ${a.comp} · ${a.track}<br>${a.trackCn} | **${a.prize}**<br
 `;
 writeFileSync(join(OUT, "..", "README.md"), README);
 console.log("wrote", OUT, "and README.md");
+
