@@ -4,15 +4,25 @@
 
 <p align="center">
   <a href="https://qinxi-ai.github.io/"><b>Personal website</b></a> &nbsp;·&nbsp;
-  <a href="https://zenodo.org/records/23584756">Latest paper</a> &nbsp;·&nbsp;
+  <a href="#failure-steps-are-not-repair-intents">Latest paper</a> &nbsp;·&nbsp;
   <a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests">Merged pull requests</a> &nbsp;·&nbsp;
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
-<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="3 research preprints, 67 public PRs merged, 27 repositories, 4 competition awards" width="100%"></picture></a>
-<p align="center"><sub>Research updated 23 October 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
+<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="4 research papers, 67 public PRs merged, 27 repositories, 4 competition awards" width="100%"></picture></a>
+<p align="center"><sub>Research updated 4 November 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
 
 ## 01 / Selected research
+
+<a id="failure-steps-are-not-repair-intents"></a>
+
+### Failure Steps Are Not Repair Intents: Measuring Actionable Ambiguity in Multi-Agent System Diagnosis
+
+**WSDM 2027 Findings · Accepted · First author: Xi Qin**
+
+Do different blamed execution steps imply different repairs? We study expert-recommended actions from MP-Bench through a prediction-blind, human-audited model-assisted analysis of **96 multi-agent traces** and **1,436 actions**.
+
+In the primary analysis, **85.1% of traces** contain fewer distinct repair intents than blamed steps, while top repair-set alignment reaches **95.7%**. The findings show how step-level evaluation can overstate actionable diversity while often preserving the first repair priority.
 
 ### [Instance-Optimal Identity Testing at the Original Total-Variation Radius: Resolving Canonne's 2024 Open Question 1](https://zenodo.org/records/23584756)
 

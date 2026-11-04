@@ -10,9 +10,9 @@ mkdirSync(OUT, { recursive: true });
 // ---------------------------------------------------------------- content
 
 const STATS = {
-  asOf: "RESEARCH 23 OCT · OPEN SOURCE 20 OCT 2026",
+  asOf: "RESEARCH 04 NOV · OPEN SOURCE 20 OCT 2026",
   items: [
-    ["3", "research preprints", "learning · testing · eval"],
+    ["4", "research papers", "1 accepted · 3 preprints"],
     ["67", "public PRs merged", "query engines → agents"],
     ["27", "repositories", "outside personal namespace"],
     ["4", "competition awards", "incl. 2 first prizes"],
@@ -374,15 +374,25 @@ ${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin at Wuhan University �
 
 <p align="center">
   <a href="https://qinxi-ai.github.io/"><b>Personal website</b></a> &nbsp;·&nbsp;
-  <a href="https://zenodo.org/records/23584756">Latest paper</a> &nbsp;·&nbsp;
+  <a href="#failure-steps-are-not-repair-intents">Latest paper</a> &nbsp;·&nbsp;
   <a href="${MERGED}">Merged pull requests</a> &nbsp;·&nbsp;
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
 ${link(MERGED, pic("stats", STATS.items.map(([n, l]) => `${n} ${l}`).join(", ")))}
-<p align="center"><sub>Research updated 23 October 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
+<p align="center"><sub>Research updated 4 November 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
 
 ## 01 / Selected research
+
+<a id="failure-steps-are-not-repair-intents"></a>
+
+### Failure Steps Are Not Repair Intents: Measuring Actionable Ambiguity in Multi-Agent System Diagnosis
+
+**WSDM 2027 Findings · Accepted · First author: Xi Qin**
+
+Do different blamed execution steps imply different repairs? We study expert-recommended actions from MP-Bench through a prediction-blind, human-audited model-assisted analysis of **96 multi-agent traces** and **1,436 actions**.
+
+In the primary analysis, **85.1% of traces** contain fewer distinct repair intents than blamed steps, while top repair-set alignment reaches **95.7%**. The findings show how step-level evaluation can overstate actionable diversity while often preserving the first repair priority.
 
 ### [Instance-Optimal Identity Testing at the Original Total-Variation Radius: Resolving Canonne's 2024 Open Question 1](https://zenodo.org/records/23584756)
 
