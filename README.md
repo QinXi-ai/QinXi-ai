@@ -10,7 +10,7 @@
 </p>
 
 <a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="4 research papers, 98 public PRs merged, 28 repositories, 4 competition awards" width="100%"></picture></a>
-<p align="center"><sub>Research updated 4 November 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
+<p align="center"><sub>Research &amp; open-source snapshot updated 25 November 2026 · Public merged PRs outside my personal namespace</sub></p>
 
 ## 01 / Selected research
 
@@ -32,7 +32,7 @@ How many samples are needed to test whether an unknown distribution equals a spe
 
 The preprint resolves **Canonne's COLT 2024 Open Question 1** in the countable-alphabet model, with matching upper and lower bounds and a polynomial-time factor-two approximation for explicit rational input.
 
-[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
+[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [Lean 4 proof (530 modules) ↗](https://github.com/QinXi-ai/identity-testing-lean) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
 
 ### [Exact Three-Example Selection in Every Dimension](https://zenodo.org/records/23119254)
 
@@ -55,7 +55,7 @@ A framework for connecting evaluation artifacts to the claims they support. The 
 
 ## 02 / Open-source contributions
 
-**14 PRs merged since 2 October.** Selected work across query engines, developer tools, scientific computing, and agent security.
+**31 PRs merged since 20 October.** Selected work across Blackwell GPU kernels, query engines, developer tools, scientific computing, and agent security.
 
 | Project | Contribution | Merged |
 | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ A framework for connecting evaluation artifacts to the claims they support. The 
 | **microsoft/vscode-eslint** | [Keep linting inside the workspace · #2227](https://github.com/microsoft/vscode-eslint/pull/2227) | 2026-10-16 |
 | **pydata/xarray** | [Bring apply_ufunc to DataTree · #11552](https://github.com/pydata/xarray/pull/11552) | 2026-09-09 |
 
-Also just merged: [SysKnife #612 — detect credentials after escaped boundaries](https://github.com/lacs-project/sysknife/pull/612) · 19 October.
+Also recently merged: [SysKnife #828 — pin MCP publisher and scan all CI workflows](https://github.com/lacs-project/sysknife/pull/828) (20 Nov) · [mojo-dllm #133 — Q5_0/Q8_0 CPU tiles and grouped MoE](https://github.com/dllm-labs/mojo-dllm/pull/133) (4 Nov).
 
 [Browse all 98 public merged PRs →](https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests)
 
@@ -111,7 +111,7 @@ A smart-home agent with simulated devices, a DeepSeek tool-calling loop, and a r
 
 ---
 
-**Works in** Rust · Python · TypeScript · C · MoonBit · openvela / LVGL
+**Works in** Rust · Python · Mojo · Lean 4 · TypeScript · C · MoonBit · openvela / LVGL
 
 *Nihil ultra testimonium.* — Nothing beyond the evidence.
 

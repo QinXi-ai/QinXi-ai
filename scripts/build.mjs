@@ -381,7 +381,7 @@ ${link("https://qinxi-ai.github.io/", pic("hero", "Xi Qin at Wuhan University �
 </p>
 
 ${link(MERGED, pic("stats", STATS.items.map(([n, l]) => `${n} ${l}`).join(", ")))}
-<p align="center"><sub>Research updated 4 November 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
+<p align="center"><sub>Research &amp; open-source snapshot updated 25 November 2026 · Public merged PRs outside my personal namespace</sub></p>
 
 ## 01 / Selected research
 
@@ -403,7 +403,7 @@ How many samples are needed to test whether an unknown distribution equals a spe
 
 The preprint resolves **Canonne's COLT 2024 Open Question 1** in the countable-alphabet model, with matching upper and lower bounds and a polynomial-time factor-two approximation for explicit rational input.
 
-[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
+[Read the paper ↗](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1.pdf) · [LaTeX source ↓](https://zenodo.org/records/23584756/files/instance_optimal_identity_testing_v1_source.zip) · [Lean 4 proof (530 modules) ↗](https://github.com/QinXi-ai/identity-testing-lean) · [DOI: 10.5281/zenodo.23584756](https://doi.org/10.5281/zenodo.23584756)
 
 ### [Exact Three-Example Selection in Every Dimension](https://zenodo.org/records/23119254)
 
@@ -426,13 +426,13 @@ A framework for connecting evaluation artifacts to the claims they support. The 
 
 ## 02 / Open-source contributions
 
-**14 PRs merged since 2 October.** Selected work across query engines, developer tools, scientific computing, and agent security.
+**31 PRs merged since 20 October.** Selected work across Blackwell GPU kernels, query engines, developer tools, scientific computing, and agent security.
 
 | Project | Contribution | Merged |
 | :--- | :--- | :--- |
 ${PRS.map(p => `| **${p.owner}/${p.repo}** | [${p.title} · #${p.n}](https://github.com/${p.owner}/${p.repo}/pull/${p.n}) | ${p.date} |`).join("\n")}
 
-Also just merged: [SysKnife #612 — detect credentials after escaped boundaries](https://github.com/lacs-project/sysknife/pull/612) · 19 October.
+Also recently merged: [SysKnife #828 — pin MCP publisher and scan all CI workflows](https://github.com/lacs-project/sysknife/pull/828) (20 Nov) · [mojo-dllm #133 — Q5_0/Q8_0 CPU tiles and grouped MoE](https://github.com/dllm-labs/mojo-dllm/pull/133) (4 Nov).
 
 [Browse all ${STATS.items[1][0]} public merged PRs →](${MERGED})
 
@@ -450,7 +450,7 @@ ${AWARDS.map(a => `| ${a.comp} · ${a.track}<br>${a.trackCn} | **${a.prize}**<br
 
 ---
 
-**Works in** Rust · Python · TypeScript · C · MoonBit · openvela / LVGL
+**Works in** Rust · Python · Mojo · Lean 4 · TypeScript · C · MoonBit · openvela / LVGL
 
 *Nihil ultra testimonium.* — Nothing beyond the evidence.
 
