@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="176" viewBox="0 0 440 176" role="img" aria-label="FastRead — A paper-reading workspace with page-linked evidence, reports, notes, and conversations grounded in the original PDF.">
-<title>FastRead — A paper-reading workspace with page-linked evidence, reports, notes, and conversations grounded in the original PDF.</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="176" viewBox="0 0 440 176" role="img" aria-label="evalspec-audit — Reproducible audits of how evaluation choices affect scores, rankings, and the claims a benchmark supports.">
+<title>evalspec-audit — Reproducible audits of how evaluation choices affect scores, rankings, and the claims a benchmark supports.</title>
 <style>
 .serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
 .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
@@ -10,6 +10,6 @@
 </style>
 <rect x="0.5" y="0.5" width="439" height="175" rx="6" fill="#F7F5EF" stroke="#D8D1C1"/>
 <text x="26" y="36" class="mono accent" font-size="11" letter-spacing="1.5">03</text>
-<text x="414" y="36" text-anchor="end" class="cap" font-size="9.5">PYTHON / TS</text>
-<g class="rise"><text x="26" y="74" class="serif ink" font-size="23" letter-spacing="-.2">FastRead<tspan class="accent" font-size="16"> ↗</tspan></text></g><text x="26" y="106" class="serif muted fade" font-size="14.5" style="animation-delay:0.2s">A paper-reading workspace with page-linked evidence,</text><text x="26" y="127" class="serif muted fade" font-size="14.5" style="animation-delay:0.2s">reports, notes, and conversations grounded in the</text><text x="26" y="148" class="serif muted fade" font-size="14.5" style="animation-delay:0.2s">original PDF.</text>
+<text x="414" y="36" text-anchor="end" class="cap" font-size="9.5">PYTHON</text>
+<g class="rise"><text x="26" y="74" class="serif ink" font-size="23" letter-spacing="-.2">evalspec-audit<tspan class="accent" font-size="16"> ↗</tspan></text></g><text x="26" y="106" class="serif muted fade" font-size="14.5" style="animation-delay:0.2s">Reproducible audits of how evaluation choices affect</text><text x="26" y="127" class="serif muted fade" font-size="14.5" style="animation-delay:0.2s">scores, rankings, and the claims a benchmark supports.</text>
 </svg>

@@ -10,16 +10,16 @@ mkdirSync(OUT, { recursive: true });
 // ---------------------------------------------------------------- content
 
 const STATS = {
-  asOf: "RESEARCH 04 NOV · OPEN SOURCE 20 OCT 2026",
+  asOf: "RESEARCH & OPEN SOURCE · 25 NOV 2026",
   items: [
     ["4", "research papers", "1 accepted · 3 preprints"],
-    ["67", "public PRs merged", "query engines → agents"],
-    ["27", "repositories", "outside personal namespace"],
+    ["98", "public PRs merged", "GPU kernels → agents"],
+    ["28", "repositories", "outside personal namespace"],
     ["4", "competition awards", "incl. 2 first prizes"],
   ],
 };
 
-const STACK = ["Rust", "Python", "TypeScript", "C", "MoonBit", "openvela · LVGL", "LLM evaluation"];
+const STACK = ["Rust", "Python", "Mojo", "Lean 4", "TypeScript", "C", "MoonBit", "openvela · LVGL"];
 
 const SECTIONS = {
   research: ["01", "SELECTED RESEARCH", "Questions, made precise.", "Ad fontes", "BACK TO THE SOURCES"],
@@ -46,17 +46,18 @@ const PAPER = {
 };
 
 const PRS = [
+  { cat: "GPU & MOJO", owner: "dllm-labs", repo: "mojo-dllm", n: 175, title: "Calibrate DiffusionGemma parity on fixed reference inputs", proof: "Fixed-reference parity · cached path checks", add: 10825, del: 129, files: 20, date: "2026-11-24" },
+  { cat: "AGENT SECURITY", owner: "lacs-project", repo: "sysknife", n: 786, title: "Export both audit chains and verify them offline", proof: "Tamper-detection · offline chain audit", add: 306, del: 28, files: 11, date: "2026-11-15" },
+  { cat: "QUERY ENGINES", owner: "apache", repo: "datafusion", n: 25988, title: "Add opt-in native grouped integer DISTINCT counts", proof: "SQL logic tests · accumulator benchmarks", add: 779, del: 12, files: 21, date: "2026-11-08" },
+  { cat: "GPU & MOJO", owner: "dllm-labs", repo: "mojo-dllm", n: 73, title: "Batch long GQA loads without changing softmax order", proof: "Order-preserving numerical checks", add: 7108, del: 82, files: 12, date: "2026-11-04" },
+  { cat: "GPU & MOJO", owner: "dllm-labs", repo: "mojo-dllm", n: 71, title: "Tune Q4_K tile dispatch for RTX Blackwell", proof: "RTX PRO 6000D benchmarks · kernel parity", add: 5739, del: 14, files: 19, date: "2026-11-03" },
   { cat: "QUERY ENGINES", owner: "apache", repo: "datafusion", n: 25765, title: "Serialize lazy generators through hooks", proof: "Wire compatibility · round-trip execution", add: 804, del: 240, files: 11, date: "2026-10-19" },
   { cat: "DEVELOPER TOOLS", owner: "microsoft", repo: "vscode-eslint", n: 2227, title: "Keep linting inside the workspace", proof: "Opt-in boundary · virtual-file support", add: 229, del: 73, files: 8, date: "2026-10-16" },
-  { cat: "AGENT SECURITY", owner: "lacs-project", repo: "sysknife", n: 573, title: "Redact credentials from tool context", proof: "Provider-context regression coverage", add: 617, del: 7, files: 10, date: "2026-10-12" },
-  { cat: "QUERY ENGINES", owner: "apache", repo: "datafusion", n: 25150, title: "Skip hashing for fully ordered group keys", proof: "Differential tests · cross-batch coverage", add: 779, del: 2, files: 7, date: "2026-10-01" },
   { cat: "SCIENTIFIC PYTHON", owner: "pydata", repo: "xarray", n: 11552, title: "Bring apply_ufunc to DataTree", proof: "323 targeted tests · tree regressions", add: 151, del: 6, files: 4, date: "2026-09-09" },
-  { cat: "NUMERICAL METHODS", owner: "awslabs", repo: "stickler", n: 284, title: "Replace sklearn metrics with NumPy", proof: "130 oracle tests · 1,947 portable tests", add: 269, del: 66, files: 10, date: "2026-08-28" },
-  { cat: "DATA SYSTEMS", owner: "AndreaBozzo", repo: "dataprof", n: 655, title: "Read and profile only selected columns", proof: "Rust + 353 Python tests · byte ranges", add: 934, del: 133, files: 24, date: "2026-09-01" },
-  { cat: "GEOMETRY", owner: "3b1b", repo: "manim", n: 2501, title: "Fix batched 2D vector rotation", proof: "2D/3D regressions · VectorField repro", add: 53, del: 2, files: 2, date: "2026-08-17" },
 ];
 
 const WORK = [
+  { name: "identity-testing-lean", lang: "LEAN 4", desc: "530-module Lean 4 formalization of instance-optimal identity testing at the original TV radius, with certified rational interval evaluation.", url: "https://github.com/QinXi-ai/identity-testing-lean" },
   { name: "Pocket MOSS Image", lang: "PYTHON / PYTORCH", desc: "Low-memory MOSS-Image inference: the original 9B text encoder with packed INT6 weights and a streamed, fused INT8 DiT. No retraining or replacement encoder.", url: "https://github.com/QinXi-ai/pocket-moss-image" },
   { name: "evalspec-audit", lang: "PYTHON", desc: "Reproducible audits of how evaluation choices affect scores, rankings, and the claims a benchmark supports.", url: "https://github.com/QinXi-ai/evalspec-audit" },
   { name: "FastRead", lang: "PYTHON / TS", desc: "A paper-reading workspace with page-linked evidence, reports, notes, and conversations grounded in the original PDF.", url: "https://github.com/FastR-D/FastRead" },

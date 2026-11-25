@@ -9,7 +9,7 @@
   <a href="mailto:3624951962qx@gmail.com">Email</a>
 </p>
 
-<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="4 research papers, 67 public PRs merged, 27 repositories, 4 competition awards" width="100%"></picture></a>
+<a href="https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg"><img src="assets/stats-light.svg" alt="4 research papers, 98 public PRs merged, 28 repositories, 4 competition awards" width="100%"></picture></a>
 <p align="center"><sub>Research updated 4 November 2026 · Public merged PRs outside my personal namespace, verified 20 October 2026</sub></p>
 
 ## 01 / Selected research
@@ -59,20 +59,23 @@ A framework for connecting evaluation artifacts to the claims they support. The 
 
 | Project | Contribution | Merged |
 | :--- | :--- | :--- |
+| **dllm-labs/mojo-dllm** | [Calibrate DiffusionGemma parity on fixed reference inputs · #175](https://github.com/dllm-labs/mojo-dllm/pull/175) | 2026-11-24 |
+| **lacs-project/sysknife** | [Export both audit chains and verify them offline · #786](https://github.com/lacs-project/sysknife/pull/786) | 2026-11-15 |
+| **apache/datafusion** | [Add opt-in native grouped integer DISTINCT counts · #25988](https://github.com/apache/datafusion/pull/25988) | 2026-11-08 |
+| **dllm-labs/mojo-dllm** | [Batch long GQA loads without changing softmax order · #73](https://github.com/dllm-labs/mojo-dllm/pull/73) | 2026-11-04 |
+| **dllm-labs/mojo-dllm** | [Tune Q4_K tile dispatch for RTX Blackwell · #71](https://github.com/dllm-labs/mojo-dllm/pull/71) | 2026-11-03 |
 | **apache/datafusion** | [Serialize lazy generators through hooks · #25765](https://github.com/apache/datafusion/pull/25765) | 2026-10-19 |
 | **microsoft/vscode-eslint** | [Keep linting inside the workspace · #2227](https://github.com/microsoft/vscode-eslint/pull/2227) | 2026-10-16 |
-| **lacs-project/sysknife** | [Redact credentials from tool context · #573](https://github.com/lacs-project/sysknife/pull/573) | 2026-10-12 |
-| **apache/datafusion** | [Skip hashing for fully ordered group keys · #25150](https://github.com/apache/datafusion/pull/25150) | 2026-10-01 |
 | **pydata/xarray** | [Bring apply_ufunc to DataTree · #11552](https://github.com/pydata/xarray/pull/11552) | 2026-09-09 |
-| **awslabs/stickler** | [Replace sklearn metrics with NumPy · #284](https://github.com/awslabs/stickler/pull/284) | 2026-08-28 |
-| **AndreaBozzo/dataprof** | [Read and profile only selected columns · #655](https://github.com/AndreaBozzo/dataprof/pull/655) | 2026-09-01 |
-| **3b1b/manim** | [Fix batched 2D vector rotation · #2501](https://github.com/3b1b/manim/pull/2501) | 2026-08-17 |
 
 Also just merged: [SysKnife #612 — detect credentials after escaped boundaries](https://github.com/lacs-project/sysknife/pull/612) · 19 October.
 
-[Browse all 67 public merged PRs →](https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests)
+[Browse all 98 public merged PRs →](https://github.com/search?q=is%3Apr+author%3AQinXi-ai+is%3Amerged+is%3Apublic+-user%3AQinXi-ai&type=pullrequests)
 
 ## 03 / Selected projects
+
+**[identity-testing-lean](https://github.com/QinXi-ai/identity-testing-lean)** · `LEAN 4`<br>
+530-module Lean 4 formalization of instance-optimal identity testing at the original TV radius, with certified rational interval evaluation.
 
 **[Pocket MOSS Image](https://github.com/QinXi-ai/pocket-moss-image)** · `PYTHON / PYTORCH`<br>
 Low-memory MOSS-Image inference: the original 9B text encoder with packed INT6 weights and a streamed, fused INT8 DiT. No retraining or replacement encoder.

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="132" viewBox="0 0 900 132" role="img" aria-label="4 research papers · 67 public PRs merged · 27 repositories · 4 competition awards">
-<title>4 research papers · 67 public PRs merged · 27 repositories · 4 competition awards</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="132" viewBox="0 0 900 132" role="img" aria-label="4 research papers · 98 public PRs merged · 28 repositories · 4 competition awards">
+<title>4 research papers · 98 public PRs merged · 28 repositories · 4 competition awards</title>
 <style>
 .serif{font-family:Georgia, 'Times New Roman', 'Songti SC', 'STSong', SimSun, serif}
 .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace}
@@ -15,16 +15,16 @@
   <text x="40" y="94" class="mono ink" font-size="12" letter-spacing=".4">research papers</text>
   <text x="40" y="112" class="mono muted" font-size="10.5">1 accepted · 3 preprints</text>
 </g><line x1="245" y1="28" x2="245" y2="104" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.22s">
-  <text x="269" y="70" class="serif accent" font-size="46" letter-spacing="-1">67</text>
+  <text x="269" y="70" class="serif accent" font-size="46" letter-spacing="-1">98</text>
   <text x="269" y="94" class="mono ink" font-size="12" letter-spacing=".4">public PRs merged</text>
-  <text x="269" y="112" class="mono muted" font-size="10.5">query engines → agents</text>
+  <text x="269" y="112" class="mono muted" font-size="10.5">GPU kernels → agents</text>
 </g><line x1="450" y1="28" x2="450" y2="104" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.33999999999999997s">
-  <text x="474" y="70" class="serif ink" font-size="46" letter-spacing="-1">27</text>
+  <text x="474" y="70" class="serif ink" font-size="46" letter-spacing="-1">28</text>
   <text x="474" y="94" class="mono ink" font-size="12" letter-spacing=".4">repositories</text>
   <text x="474" y="112" class="mono muted" font-size="10.5">outside personal namespace</text>
 </g><line x1="655" y1="28" x2="655" y2="104" stroke="#D8D1C1"/><g class="rise" style="animation-delay:0.45999999999999996s">
   <text x="679" y="70" class="serif ink" font-size="46" letter-spacing="-1">4</text>
   <text x="679" y="94" class="mono ink" font-size="12" letter-spacing=".4">competition awards</text>
   <text x="679" y="112" class="mono muted" font-size="10.5">incl. 2 first prizes</text>
-</g><text x="860" y="22" text-anchor="end" class="cap" font-size="9">RESEARCH 04 NOV · OPEN SOURCE 20 OCT 2026</text>
+</g><text x="860" y="22" text-anchor="end" class="cap" font-size="9">RESEARCH & OPEN SOURCE · 25 NOV 2026</text>
 </svg>
