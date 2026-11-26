@@ -177,7 +177,7 @@ function stats(t) {
   <text x="${x + (i ? 24 : 0)}" y="112" class="mono muted" font-size="10.5">${esc(sub)}</text>
 </g>`;
   });
-  body += `<text x="${W - 40}" y="22" text-anchor="end" class="cap" font-size="9">${STATS.asOf}</text>`;
+  body += `<text x="${W - 40}" y="22" text-anchor="end" class="cap" font-size="9">${esc(STATS.asOf)}</text>`;
   return svg(W, H, t, body, STATS.items.map(([n, label]) => `${n} ${label}`).join(" · "));
 }
 
